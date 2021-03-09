@@ -1,5 +1,3 @@
-# I'm prime
+# I'm imfondof
 
-## 十方三世，尽在一念
-
-> update at: 2021-01-20 10:16
+## stay hungry  stay foolish
