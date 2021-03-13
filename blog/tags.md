@@ -1,5 +1,5 @@
 ---
-layout : page
+layout : post_test
 permalink: /tags.html
 title : 标签
 ---
