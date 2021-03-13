@@ -1,4 +1,8 @@
-# 盼望
+---
+layout : post_test
+title : 盼望
+tags: [other]
+---
 
 一个海员说，
 
