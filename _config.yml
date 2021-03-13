@@ -1,2 +1,4 @@
 theme: jekyll-theme-hacker
 title: I'm imfondof
+
+permalink: /:year/:month/:day/:title/
