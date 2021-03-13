@@ -1,5 +1,5 @@
 ---
-layout : post
+layout : post_test
 title : 一个女孩的梦
 tags: [other]
 ---
