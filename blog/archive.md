@@ -2,7 +2,6 @@
 layout: post_test
 permalink: /archive.html
 title: 归档
-tags: [归档]
 ---
 
 {% assign count = 1 %}
