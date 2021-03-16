@@ -28,5 +28,5 @@ title: 归档
 {:.archive-title}
         {% assign i = i | plus: 1 %}
     {% endif %}
-* {{ post.date | date: '%Y-%m-%d' }} ; [{{ post.title }}]({{ post.url }} "{{ post.title }}"){:.archive-item-link}
+* {{ post.date | date: '%Y-%m-%d' }} [{{ post.title }}]({{ post.url }} "{{ post.title }}"){:.archive-item-link}
 {% endfor %}
