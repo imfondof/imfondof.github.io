@@ -149,6 +149,10 @@ dt {
   font-weight: bold;
 }
 
+ul li {
+  list-style-type:none;
+}
+
 blockquote {
   color: $blockquote-color;
   padding-left: 10px;
