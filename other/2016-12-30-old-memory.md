@@ -1,6 +1,7 @@
 ---
 layout : post_test
 title : 旧忆
+permalink: /other/old-memory
 tags: [other]
 ---
 

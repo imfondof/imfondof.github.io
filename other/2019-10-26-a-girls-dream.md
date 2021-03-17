@@ -1,6 +1,7 @@
 ---
 layout : post_test
 title : 一个女孩的梦
+permalink: /other/a-girls-dream/
 tags: [other]
 ---
 

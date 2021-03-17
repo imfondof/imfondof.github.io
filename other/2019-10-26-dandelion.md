@@ -1,6 +1,7 @@
 ---
 layout : post_test
 title : 蒲公英
+permalink: /other/dandelion/
 tags: [other]
 ---
 
