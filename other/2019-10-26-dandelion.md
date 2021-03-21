@@ -1,5 +1,5 @@
 ---
-layout : post_test
+layout : post
 title : 蒲公英
 permalink: /other/dandelion/
 tags: [other]

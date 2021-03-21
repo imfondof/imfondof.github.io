@@ -1,5 +1,5 @@
 ---
-layout : post_test
+layout : post
 title : 一个女孩的梦
 permalink: /other/a-girls-dream/
 tags: [other]

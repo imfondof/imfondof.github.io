@@ -1,5 +1,5 @@
 ---
-layout : post_test
+layout : post
 title : 旧忆
 permalink: /other/old-memory
 tags: [other]
