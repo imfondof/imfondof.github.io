@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5f5a97a-04dc-4fe4-90f8-83a8bfc0375b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/other/2016-12-30-old-memory.md" beforeDir="false" afterPath="$PROJECT_DIR$/other/2016-12-30-old-memory.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/other/2019-10-26-a-girls-dream.md" beforeDir="false" afterPath="$PROJECT_DIR$/other/2019-10-26-a-girls-dream.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/other/2019-10-26-dandelion.md" beforeDir="false" afterPath="$PROJECT_DIR$/other/2019-10-26-dandelion.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/other/2019-10-26-expect.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/other/2019-10-26-expect.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/other/2019-10-26-story-pnc-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/other/2019-10-26-story-pnc-1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/other/2019-10-26-story-pnc-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/other/2019-10-26-story-pnc-2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/other/2019-10-26-story-pnc-3.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/other/2019-10-26-story-pnc-3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/think/2020-01-01-2020-cant-forget.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/think/2020-01-01-2020-cant-forget.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/think/2020-01-01-2020-start.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/think/2020-01-01-2020-start.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/avatar-hux-ny.jpg" beforeDir="false" />
-    </list>
+    <list default="true" id="a5f5a97a-04dc-4fe4-90f8-83a8bfc0375b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -273,9 +261,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1616075749650" />
-    <state x="447" y="145" width="642" height="534" key="find.popup" timestamp="1616335805727">
+    <state x="447" y="145" width="642" height="534" key="find.popup" timestamp="1616336367723">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="447" y="145" width="642" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1616335805727" />
+    <state x="447" y="145" width="642" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1616336367723" />
   </component>
 </project>

@@ -103,6 +103,8 @@ page-mathjax: false
 # Friends
 friends: [
     {
+      title: "imfondof",
+      href: "http://imfondof.xyz/"
     #     title: "Su",
     #     href: "http://su.gallery/"
     # },{
