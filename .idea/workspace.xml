@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5f5a97a-04dc-4fe4-90f8-83a8bfc0375b" name="Default Changelist" comment="" />
+    <list default="true" id="a5f5a97a-04dc-4fe4-90f8-83a8bfc0375b" name="Default Changelist" comment="修改 about">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,10 +46,10 @@
       <recent name="D:\dev\work\blog\imfondof.github.io\_posts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dev\work\blog\imfondof.github.io\_posts\other" />
       <recent name="D:\dev\work\blog\imfondof.github.io\other" />
       <recent name="D:\dev\work\blog\imfondof.github.io\_includes" />
       <recent name="D:\dev\work\blog\imfondof.github.io\_layouts" />
-      <recent name="D:\dev\work\blog\imfondof.github.io\_posts\other" />
       <recent name="D:\dev\work\blog\imfondof.github.io\_posts\life" />
     </key>
   </component>
@@ -180,7 +183,35 @@
       <option name="project" value="LOCAL" />
       <updated>1616080306047</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="修改">
+      <created>1616336419691</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1616336419691</updated>
+    </task>
+    <task id="LOCAL-00019" summary="修改">
+      <created>1616337144165</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1616337144165</updated>
+    </task>
+    <task id="LOCAL-00020" summary="修改 about">
+      <created>1616337390528</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1616337390528</updated>
+    </task>
+    <task id="LOCAL-00021" summary="修改 about">
+      <created>1616337759414</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1616337759414</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -226,21 +257,23 @@
     <MESSAGE value="测试标签2" />
     <MESSAGE value="测试标签3" />
     <MESSAGE value="极简" />
-    <option name="LAST_COMMIT_MESSAGE" value="极简" />
+    <MESSAGE value="修改" />
+    <MESSAGE value="修改 about" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改 about" />
   </component>
   <component name="WindowStateProjectService">
     <state x="505" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615820164972">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="505" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1615820164972" />
-    <state x="387" y="0" key="CommitChangelistDialog2" timestamp="1616080305065">
+    <state x="387" y="0" key="CommitChangelistDialog2" timestamp="1616337752575">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="387" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1616080305065" />
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1616079745459">
+    <state x="387" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1616337752575" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1616337480388">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1616079745459" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1616337480388" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1616169279663">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -253,17 +286,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="619" y="124" key="VCS.ChangeListViewerDialog/0.0.1536.824@0.0.1536.824" timestamp="1616079381421" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616080307680">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616337760875">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616080307680" />
-    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616075749650">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616337760875" />
+    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616337745674">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1616075749650" />
-    <state x="447" y="145" width="642" height="534" key="find.popup" timestamp="1616336367723">
+    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1616337745674" />
+    <state x="447" y="145" width="642" height="534" key="find.popup" timestamp="1616337695415">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="447" y="145" width="642" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1616336367723" />
+    <state x="447" y="145" width="642" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1616337695415" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1616337636250">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1616337636250" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1616337633073">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1616337633073" />
   </component>
 </project>
