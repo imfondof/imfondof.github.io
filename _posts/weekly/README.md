@@ -1,9 +1,9 @@
-这里记录每周值得分享的科技、生活内容，周六发布。
-
-本周刊开源（[github/imfondof](https://github.com/imfondof/imfondof.github.io/tree/main/_posts/weekly)），欢迎提交issue，投稿或者推荐科技、生活内容。
+这里记录每周值得分享的内容，周六发布。
 
 ## 2021
 
 **十一月**
+
+- 第 2 期：[apple music年度最热歌曲](/_posts/weekly/docs/2021-12-04-issue-2.md)
 
 - 第 1 期：[户外电源](/_posts/weekly/docs/2021-11-27-issue-1.md)
