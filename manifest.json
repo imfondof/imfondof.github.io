@@ -1,6 +1,6 @@
 {
-    "name": "blog",
-    "short_name": "blog",
+    "name": "imfondof_github_page",
+    "short_name": "imfondof_github_page",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
