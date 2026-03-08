@@ -1,0 +1,353 @@
+:root {
+  --bg: #f1eadc;
+  --bg-soft: rgba(255, 255, 255, 0.55);
+  --surface: rgba(255, 252, 246, 0.74);
+  --surface-strong: #fffaf1;
+  --border: rgba(64, 44, 22, 0.12);
+  --text: #2d2417;
+  --text-soft: #635440;
+  --accent: #9d4f2d;
+  --accent-strong: #6e3017;
+  --shadow: 0 20px 60px rgba(71, 42, 18, 0.12);
+  --content-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top, rgba(196, 123, 70, 0.22), transparent 32%),
+    linear-gradient(180deg, #efe5d2 0%, #f5f0e7 45%, #efe7d9 100%);
+  font-family: "Noto Serif SC", "Iowan Old Style", "Palatino Linotype", "STSong", "SimSun", serif;
+  line-height: 1.75;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.page-shell {
+  width: min(calc(100% - 2rem), var(--content-width));
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.site-header,
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  background: rgba(255, 249, 240, 0.76);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+}
+
+.brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  color: var(--text-soft);
+}
+
+.nav a:hover,
+.back-link:hover,
+.archive-list a:hover,
+.post-card:hover {
+  color: var(--accent-strong);
+}
+
+main {
+  padding: 3rem 0 5rem;
+}
+
+.hero,
+.section-block,
+.archive,
+.article-shell,
+.not-found {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  border-radius: 32px;
+}
+
+.hero {
+  padding: 4.5rem clamp(1.5rem, 3vw, 3rem);
+  background:
+    linear-gradient(135deg, rgba(255, 249, 241, 0.92), rgba(248, 233, 210, 0.82)),
+    url("/images/bg3.jpg") center/cover;
+  overflow: hidden;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+}
+
+.hero h1,
+.section-head h1,
+.section-head h2,
+.article-header h1,
+.not-found h1 {
+  margin: 0;
+  line-height: 1.1;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 10vw, 6rem);
+}
+
+.hero-copy,
+.section-head p,
+.article-description,
+.not-found p {
+  max-width: 44rem;
+  color: var(--text-soft);
+  font-size: 1.05rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.button-primary,
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 9rem;
+  padding: 0.9rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.button-primary {
+  background: var(--accent);
+  color: #fffaf4;
+}
+
+.button-secondary {
+  background: rgba(255, 250, 243, 0.76);
+}
+
+.button-primary:hover,
+.button-secondary:hover {
+  transform: translateY(-1px);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.section-block,
+.archive,
+.not-found,
+.article-shell {
+  margin-top: 2rem;
+  padding: clamp(1.4rem, 3vw, 2.5rem);
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.post-card {
+  display: block;
+  padding: 1.4rem;
+  background: var(--surface-strong);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(71, 42, 18, 0.12);
+}
+
+.post-card h3,
+.archive-list span {
+  margin: 0.3rem 0;
+  font-size: 1.2rem;
+}
+
+.post-date,
+.article-meta,
+.site-footer,
+.archive-list time {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.archive-list,
+.tag-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+}
+
+.archive-list li + li {
+  margin-top: 0.8rem;
+}
+
+.archive-list a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 20px;
+  background: var(--surface-strong);
+  border: 1px solid var(--border);
+}
+
+.article-header {
+  margin-bottom: 2rem;
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.tag-list li {
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 252, 246, 0.9);
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+
+.article-hero {
+  margin-top: 1.5rem;
+  border-radius: 24px;
+  max-height: 26rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.article-body {
+  font-size: 1.08rem;
+}
+
+.article-body :is(h2, h3, h4) {
+  line-height: 1.25;
+  margin-top: 2rem;
+}
+
+.article-body p,
+.article-body ul,
+.article-body ol,
+.article-body blockquote {
+  margin: 1rem 0;
+}
+
+.article-body a {
+  color: var(--accent-strong);
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+}
+
+.article-body pre {
+  overflow-x: auto;
+  padding: 1rem;
+  border-radius: 18px;
+  background: #f7f2e8;
+  border: 1px solid rgba(62, 48, 29, 0.08);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--text-soft);
+}
+
+.site-footer {
+  padding: 1.5rem 0 3rem;
+  border-top: 1px solid rgba(64, 44, 22, 0.08);
+  margin-top: 2.5rem;
+}
+
+.footer-beian {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+}
+
+.footer-beian a:hover {
+  color: var(--accent-strong);
+}
+
+@media (max-width: 720px) {
+  .site-header,
+  .site-footer,
+  .archive-list a {
+    display: block;
+  }
+
+  .nav {
+    margin-top: 0.8rem;
+    flex-wrap: wrap;
+  }
+
+  .post-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .archive-list a {
+    padding: 1rem;
+  }
+
+  .archive-list time {
+    display: block;
+    margin-top: 0.5rem;
+  }
+}

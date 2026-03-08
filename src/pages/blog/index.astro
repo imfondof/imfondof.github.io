@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog", ({ data }) => !data.draft)).sort((a, b) => {
+  const aTime = a.data.pubDate?.getTime() ?? 0;
+  const bTime = b.data.pubDate?.getTime() ?? 0;
+  return bTime - aTime;
+});
+---
+
+<BaseLayout title="文章" description="文章归档与全部写作列表。">
+  <section class="archive">
+    <div class="section-head">
+      <p class="eyebrow">文章归档</p>
+      <h1>全部文章</h1>
+      <p>按发布时间倒序展示，未标注日期的内容会排在后面。</p>
+    </div>
+    <ul class="archive-list">
+      {posts.map((post) => (
+        <li>
+          <a href={`/blog/${post.slug}/`}>
+            <span>{post.data.title}</span>
+            <time datetime={post.data.pubDate?.toISOString()}>
+              {post.data.pubDate ? post.data.pubDate.toLocaleDateString("zh-CN") : "未标注日期"}
+            </time>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>

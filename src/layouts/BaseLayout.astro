@@ -1,0 +1,65 @@
+---
+import "../styles/global.css";
+import { SITE_DESCRIPTION, SITE_TITLE, SITE_TITLE_ZH } from "../consts";
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const { title, description = SITE_DESCRIPTION, ogImage } = Astro.props;
+const pageTitle = title ? `${title} | ${SITE_TITLE_ZH}` : SITE_TITLE_ZH;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImageURL = ogImage
+  ? new URL(ogImage, Astro.site).toString()
+  : new URL("/images/bg3.jpg", Astro.site).toString();
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#f1eadc" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:site_name" content={SITE_TITLE} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={ogImageURL} />
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" />
+    <link rel="alternate" type="application/rss+xml" title={`${SITE_TITLE} RSS`} href="/rss.xml" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="/" title="翟硕的笔记">{SITE_TITLE}</a>
+        <nav class="nav">
+          <a href="/">首页</a>
+          <a href="/blog/">文章</a>
+          <a href="/rss.xml">RSS</a>
+        </nav>
+      </header>
+      <main>
+        <slot />
+      </main>
+      <footer class="site-footer">
+        <p>© {new Date().getFullYear()} imfondof</p>
+        <div class="footer-beian">
+          <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">京ICP备2023005104号-1</a>
+          <a href="https://beian.mps.gov.cn/#/query/webSearch" target="_blank" rel="noopener noreferrer">京网安备案11010602104839号</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

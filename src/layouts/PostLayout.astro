@@ -1,0 +1,48 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+  pubDate?: Date;
+  updatedDate?: Date;
+  tags?: string[];
+  heroImage?: string;
+}
+
+const { title, description, pubDate, updatedDate, tags = [], heroImage } = Astro.props;
+---
+
+<BaseLayout title={title} description={description} ogImage={heroImage}>
+  <article class="article-shell">
+    <a class="back-link" href="/blog/">返回文章列表</a>
+    <header class="article-header">
+      <p class="eyebrow">文章</p>
+      <h1>{title}</h1>
+      {(pubDate || updatedDate) && (
+        <div class="article-meta">
+          {pubDate && <time datetime={pubDate.toISOString()}>{pubDate.toLocaleDateString("zh-CN")}</time>}
+          {updatedDate && <span>更新于 {updatedDate.toLocaleDateString("zh-CN")}</span>}
+        </div>
+      )}
+      {description && <p class="article-description">{description}</p>}
+      {tags.length > 0 && (
+        <ul class="tag-list">
+          {tags.map((tag) => <li>{tag}</li>)}
+        </ul>
+      )}
+      {heroImage && (
+        <img
+          class="article-hero"
+          src={heroImage}
+          alt={title}
+          loading="lazy"
+          decoding="async"
+        />
+      )}
+    </header>
+    <div class="article-body">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>
